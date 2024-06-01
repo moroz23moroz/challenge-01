@@ -1,0 +1,41 @@
+.panel
+    background-size: auto 100%
+    background-position: center
+    background-repeat: no-repeat
+    height: 80vh
+    border-radius: 50px
+    cursor: pointer
+    flex: 0.5
+    margin: 10px
+    position: relative
+    transition: flex 0.7s
+    transition-timing-function: ease-in
+    &:nth-of-type(4), &:nth-of-type(5)
+        @include xxs
+            display: none
+
+    & h3
+        position: absolute
+        bottom: 20px
+        left: 20px
+        font-size: 24px
+        margin: 0
+        opacity: 0
+    &.active
+        flex: 5
+        & h3
+            opacity: 1
+            transition: opacity 0.3s
+            transition-timing-function: ease-in 0.4s
+.first
+    background-image: url('../img/maxresdefault.jpg')
+
+.second
+    background-image: url('../img/second.jpeg')
+
+.third
+    background-image: url('../img/third.png')
+.forth
+    background-image: url('../img/forth.jpeg')
+.fifth
+    background-image: url('../img/fifth.jpeg')
